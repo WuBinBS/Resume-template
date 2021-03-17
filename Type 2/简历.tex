@@ -1,0 +1,231 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 2.0 (19/3/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%!TEX program = xelatex
+% NOTICE: This template must be compiled with XeLaTeX, the line above should
+% ensure this happens automatically but if it doesn't you will need to specify 
+% XeLaTeX as the engine in your editor or script
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{ctexart} % Font size, can be: 10pt, 11pt or 12pt
+
+\input{structure.tex} % Include the file that specifies the document structure
+
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example right footer:
+%\rfoot{\color{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{multirow}
+\usepackage{geometry}
+\geometry{top=1.2cm, bottom = 0.1cm}
+
+\begin{document}
+	
+	\begin{paracol}{2}
+		
+		\begin{minipage}{0.3\linewidth}
+			\includegraphics[scale=0.13]{ff.jpg}
+		\end{minipage}
+		\begin{minipage}{0.7\linewidth}
+			\centering
+			{\zihao{-0} \kaishu 吴\ \ 彬}
+			\vskip 0.4cm
+			{\Huge\cvtextfont Ben Woo}
+		\end{minipage}
+		\vskip 0.5cm
+		
+		\section{\textbf{技术能力}}
+		\begin{supertabular}{rl}
+			\tableentry{\textbf{科技写作}}{熟练应用}{}
+			\tableentry{}{\qquad
+			\raisebox{-2pt}{\includegraphics[height=0.36cm, width=0.36cm]{mathtype.jpg}}\ 
+			\textbf{Mathtype},
+			\quad
+			\raisebox{-2pt}{\includegraphics[height=0.36cm, width=0.36cm]{texstudio.png}}\ 
+			\textbf{\LaTeX},
+			\quad
+			\raisebox{-2pt}{\includegraphics[height=0.36cm, width=0.36cm]{markdown-fill.png}}\ 
+			\textbf{Markdown}
+			}{}
+			\tableentry{}{进行一般的文档写作与排版, 且能够熟练应用}{}
+			\tableentry{}{Mathtype提高\LaTeX 和Markdown的工作效率}{spaceafter}
+			\tableentry{代表作}{\LaTeX\ --- 本科毕业论文《Witt向量简介》[$1$]}{}
+			\tableentry{}{Markdown --- CSDN博客}{}
+			\tableentry{}{}{}
+			
+			\tableentry{\textbf{编程能力}}{能够初步使用}{}
+			\tableentry{}{\qquad 
+			\raisebox{-2pt}{\includegraphics[height=0.36cm, width=0.36cm]{matlab.png}}\ 
+			\textbf{Matlab},
+			\quad
+			\raisebox{-2pt}{\includegraphics[height=0.36cm, width=0.36cm]{python.png}}\ 	
+			\textbf{Python} $3$,
+			\quad
+			\raisebox{-2pt}{\includegraphics[height=0.36cm, width=0.36cm]{lingo.jpg}}\ 		
+			\textbf{Lingo}
+			}{}
+			\tableentry{}{实现基础算法和计算数学模型}{spaceafter}
+			\tableentry{代表作}{Matlab ---  
+			实现并改进一个图像加解密算法[$2$]}{}
+			\tableentry{}{Python --- 对药房储药柜进行参数设计[$3$]}{}
+			\tableentry{}{}{}
+			\tableentry{\textbf{数据操作}}{I. 能够初步使用\quad \raisebox{-2pt}{\includegraphics[height=0.36cm, width=0.36cm]{mysql.png}\ \textbf{Mysql}\quad 读写、查询数据}}{}
+			\tableentry{}{II. 能够初步使用}{}
+			\tableentry{}{
+			\qquad
+			\raisebox{-2pt}{\includegraphics[height=0.36cm, width=0.36cm]{python.png}}\ 	
+			\textbf{Python $3$},
+			\quad
+			\raisebox{-2pt}{\includegraphics[height=0.36cm, width=0.36cm]{spss.jpg}}
+			\textbf{SPSS},
+			\quad
+			\raisebox{-2pt}{\includegraphics[height=0.36cm, width=0.36cm]{excel.png}}
+			\textbf{Excel}	
+			}{}
+			\tableentry{}{进行简单的数据处理与分析}{spaceafter}
+			\tableentry{代表作}{Python --- 从统计分析角度判断《红楼梦》后}{}
+			\tableentry{}{\qquad\qquad \  $40$回作者并非曹雪芹[$4$]}{}
+			\tableentry{}{SPSS --- 对网络信息对大学生理想伴侣标准影}{}
+			\tableentry{}{\qquad\quad \ \ 
+				响发放问卷并进行数据分析[$5$]}{}
+			\tableentry{}{}{}
+			\tableentry{\textbf{其他技能}}{I. 了解
+		\quad \raisebox{-2pt}{\includegraphics[height=0.36cm, width=0.36cm]{C语言.png}}\ \textbf{C},\quad \raisebox{-2pt}{\includegraphics[height=0.36cm, width=0.36cm]{HTML.png}}\ \textbf{HTML}\quad 的基础使用
+		}{}
+			\tableentry{}{II. 能够应用
+			\quad \raisebox{-2pt}{\includegraphics[height=0.36cm, width=0.36cm]{ppt.png}}\ \textbf{PowerPoint}, \quad
+			\raisebox{-2pt}{\includegraphics[height=0.36cm, width=0.36cm]{visio.png}}\ \textbf{Visio}
+	}{}
+			\tableentry{}{展示项目规划, 思维导图, 算法原理等}{}
+			\tableentry{}{}{}
+			\tableentry{\textbf{英语水平}}{CET$4$: $611$分,
+			\quad CET$6$: $451$分}{}
+			
+			\tableentry{}{}{}
+			\tableentry{[$1$]}{github.com/WuBinBS/Undergraduate-Thesis}{}
+			\tableentry{[$2$]}{github.com/WuBinBS/Image-encryption-pp}{}
+			\tableentry{[$3$]}{github.com/WuBinBS/CUCUM-$2014$D}{}
+			\tableentry{[$4$]}{github.com/WuBinBS/HongLouMeng-CaoXueQin}{}
+			\tableentry{[$5$]}{github.com/WuBinBS/InternetAndLove}{}
+			\tableentry{[$6$]}{github.com/WuBinBS/Teddy2019B}{}
+		\end{supertabular}
+		
+		\switchcolumn 
+		
+		
+		\begin{center}
+				\begin{supertabular}{c|l} % Start a table with two columns, the table will ensure everything is aligned
+					\raisebox{-1pt}{\textcolor[RGB]{0, 102, 255}{\textbf{手机号码}}} & 158-7617-0538\ \  \raisebox{-2pt}{\includegraphics[height=0.36cm, width=0.36cm]{中国移动.png}}\\
+					
+					\raisebox{-1pt}{\textcolor[RGB]{0, 102, 255}{\textbf{邮箱地址}}} & wubin.BS@outlook.com\ \  \raisebox{-2pt}{\includegraphics[height=0.36cm, width=0.36cm]{outlook.png}}\\
+					
+					\raisebox{-1pt}{\textcolor[RGB]{0, 102, 255}{\textbf{博客主页}}} & wubin.blog.csdn.net\ \ \raisebox{-2pt}{\includegraphics[height=0.36cm, width=0.36cm]{csdn.png}} \\
+					
+					\raisebox{-1pt}{\textcolor[RGB]{0, 102, 255}{\textbf{微信号}}} 
+					& do\_u\_luv\_m$3${-}{-}\_\_{-}{-}
+					% 两个连续短横线分别加花括号隔开
+					\ 
+					 \raisebox{-2pt}{\includegraphics[height=0.36cm, width=0.36cm]{微信.png}} \\
+					
+					\raisebox{-1pt}{\textcolor[RGB]{0, 102, 255}{\textbf{Github}}} & github.com/WuBinBS
+					\ 
+					\raisebox{-1.5pt}{\includegraphics[height=0.36cm, width=0.36cm]{github.png}} \\
+				\end{supertabular}
+			\end{center}
+			\vskip 0.15cm
+			
+		\section{\textbf{求职意愿}}
+		\qquad 算法工程师
+		
+		\vskip 0.5cm
+		
+		\section{\textbf{教育背景}} 
+		
+		% Blank \educationentry{} command to add another degree:
+		
+		%\educationentry{} % Duration
+		%{} % Degree
+		%{} % Honours, achievements or distinctions (e.g. first class honours)
+		%{} % Department
+		%{} % Institution
+		
+		% All 5 parameters must be supplied but any can be empty if you don't need them
+		
+		%------------------------------------------------
+		
+		\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+			
+			%------------------------------------------------
+			
+			\tableentry{2017.09 -- 2021.07}{\textbf{本科生(GPA: 3.68, Rank: 13)}}{}
+			\tableentry{}{理学院\ \raisebox{-1.5pt}{\includegraphics[height=0.36cm, width=0.36cm]{理学院.jpg}} \quad \textbf{应用数学专业}}{}
+			\tableentry{}{汕头大学
+				\raisebox{-1pt}{\includegraphics[height=0.36cm, width=0.36cm]{stu.jpg}}}{}
+		\end{supertabular}
+		\vskip 0.5cm
+		
+		\section{\textbf{主修课程代表}}
+		\begin{supertabular}{rl}
+			\tableentry{\textbf{代数方向}}{线性代数I\&II\ ($96$分, $94$分),}{}
+			\tableentry{}{抽象代数($90$分), 初等数论($88$分)等,}{}
+			\tableentry{}{在代数数学具备一定的兴趣}{}
+			\tableentry{}{}{}
+			\tableentry{\textbf{应用方向}}{数学模型理论\&实践($84$分与$86$分),}{}
+			\tableentry{}{最优化理论($93$分),   
+			数学规划($91$分),}{}
+			\tableentry{}{数理统计($90$分),    
+			图像处理($98$分)等,}{}
+			\tableentry{}{应用能力得到了一定的培养}{}
+		\end{supertabular}
+		\vskip 0.5cm
+		
+		\section{\textbf{主要获奖经历}}
+		
+		\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+			
+			%------------------------------------------------
+			
+			\tableentry{2019.09}{\textbf{全国大学生数学建模竞赛}}{}
+			\tableentry{}{\textit{广东赛区 \textbf{二等奖}}}{}
+			\tableentry{}{选题: B题 --- "同心协力"策略研究
+			}{}
+			\tableentry{}{相关方向: 物理数学建模}{spaceafter}
+			%------------------------------------------------
+			
+			\tableentry{2019.04}{\textbf{泰迪杯全国大学生数据挖掘竞赛}}{}
+			\tableentry{}{\textit{广东赛区\textbf{一等奖}, 全国赛区\textbf{二等奖}}}{}
+			\tableentry{}{选题: B题 --- 直肠癌淋巴结转移诊断[$6$]}{}
+			\tableentry{}{相关方向: 图像识别与分割, 相关性分析}{spaceafter}
+			
+			\tableentry{2019.01}{\textbf{美国大学生数学建模竞赛}}{}
+			\tableentry{}{\textbf{成功参与奖(S奖)}}{}
+			\tableentry{}{选题: B题 --- Send in the Drones}{}
+			\tableentry{}{相关方向: 组合数学, 行程问题}{spaceafter}
+			%------------------------------------------------
+			\tableentry{2018.10}{\textit{获汕头大学二等学业优秀奖学金}}{}
+			
+			\tableentry{2017.09}{\textit{获汕头大学优秀新生奖学金}}{}
+		\end{supertabular}
+	\end{paracol}	
+\end{document}
+
+
