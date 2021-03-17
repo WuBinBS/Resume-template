@@ -1,0 +1,157 @@
+\documentclass[12pt]{ctexart}
+% 五号 -- 10.5pt, 小四号 -- 12pt, 四号 -- 14pt
+% 一般12pt即可
+
+\usepackage{graphicx}
+% 引入graphicx宏包以实现插入图片的功能
+
+\usepackage{geometry}
+\geometry{left=2cm, right=2.5cm, top=0.5cm, bottom=1cm}
+% 引入geometry宏包并调整上下左右的页边距
+
+\pagestyle{empty}
+% 去除页眉页脚
+
+\CTEXsetup[format={\Large\bfseries},
+			beforeskip = 0.2cm
+			]{section}
+% format参数的内容是让标题左对齐而不是居中
+% beforeskip参数的内容是调整下一节标题与上一节
+% 正文的间距
+
+\begin{document}
+%----------第一部分: 基础信息-------------
+	% 这个minipage写的是姓名, 手机, 邮箱, 微信等信息
+	\noindent
+	% 这里使用\noindent取消缩进, 是因为可以把minipage
+	% 当成一段新的文字开头, 否则表格前面会有2em的空白
+	\begin{minipage}{0.5\linewidth}
+		{\zihao{2} \kaishu 黄非凡}
+		\vskip 0.2cm
+			\begin{tabular}{rl}
+				\textbf{手机号码:} & 183-1913-9470 \\ 
+				\textbf{邮箱地址:} & 17ffhuang@stu.edu.cn \\ 
+				\textbf{微信号:} & wxid\_g163m3w8jcxe12 \\ 
+			\end{tabular}
+	\end{minipage}
+	% 这个minipage装的是你的头像
+	% 注意用\hfill实现右对齐的效果
+	% 注意2个minipage之间不要有空行
+	\begin{minipage}{0.5\linewidth}
+		\hfill \raisebox{30pt}{\includegraphics[scale = 0.13]{ff.jpg}}
+		% \raisebox的作用是上下微调你的头像的位置
+	\end{minipage}
+
+%-----------第二部分: 教育经历----------------
+	\vspace{-0.6cm}
+	\section*{教育经历}
+	\vspace{-0.2cm}
+	\hrule
+	\vskip 0.2cm
+	\noindent \textbf{汕头大学}\quad 理学院 
+	\hfill 2017.09 -- 2021.06 \\
+	\textbf{数学与应用数学专业} \quad \textbf{本科} \\
+	GPA: 3.59 \quad 专业排名: 14
+	
+%-----------第三部分: 主修课程----------------
+	\section*{主修课程}
+	\vspace{-0.2cm}
+	\hrule
+	\vskip 0.2cm
+	\noindent
+	% 这里使用noindent取消整个表格前面的缩进
+	\begin{tabular}{c|l}
+		\textbf{分析方向} &
+		微积分\quad
+		数学分析I\&II(93和96)\quad 
+		复变函数\quad 
+		实变函数(91)\quad 
+		泛函分析等 \\
+		\textbf{代数方向} & 
+		线性代数与解析几何I\&II \quad
+		抽象代数\quad 
+		初等数论等\quad \\
+		\textbf{应用方向} & 
+		概率论(96)\quad 
+		数学建模(94)\quad
+		图像处理(91)\quad
+		机器人与智能计算(95)等				
+	\end{tabular}
+	\vskip 0.5cm
+	
+%-----------第四部分: 求职意愿----------------	
+	\section*{\heiti 求职意愿}
+	\vspace{-0.2cm}
+	\hrule
+	\vskip 0.2cm
+	算法工程师
+	
+%-----------第五部分: 参赛与获奖经历----------------
+	\section*{获奖经历}
+	\vspace{-0.2cm}
+	\hrule
+	\vskip 0.2cm
+	\begin{itemize}
+		\item \textbf{2018 -- 2019学年本科生奖学金}
+		\hfill 2019.12 \\
+		\textbf{二等学业优秀奖学金}\qquad 本学年GPA排名: 4
+		
+		\vspace{-0.2cm}
+		
+		\item \textbf{第七届"泰迪杯"数据挖掘挑战赛}
+		\hfill 2019.07 \\
+		全国赛区\textbf{二等奖}\qquad 
+		广东赛区\textbf{一等奖}\\
+		作品名称: 直肠癌淋巴结转移的智能诊断
+	\end{itemize}
+	\vspace{-0.5cm}
+	
+%-----------第六部分: 实践经历----------------
+	\section*{实践经历}
+	\vspace{-0.2cm}
+	\hrule
+	\vskip 0.2cm
+	\begin{itemize}
+		\item \textbf{智创未来 --- 人工智能进小学}
+			\hfill
+			2019.06 -- 2019.07 \\
+			公益课程志愿者\\
+			在汕头市陈厝合小学为小学生讲授人工智能
+	\end{itemize}
+	\vspace{-0.5cm}
+
+%-----------第七部分: 技术能力----------------
+	\section*{技术能力}
+	\vspace{-0.2cm}
+	\hrule
+	\vskip 0.2cm
+	\begin{itemize}
+		\item 能够熟练使用
+		\includegraphics[height=0.36cm, width=0.36cm]
+		{word.png}
+		Word,\quad
+		\includegraphics[height=0.36cm, width=0.36cm]
+		{ppt.png}
+		PowerPoint,\quad
+		\includegraphics[height=0.36cm, width=0.36cm]
+		{excel.png}
+		Excel
+		等软件进行日常办公\\
+		\phantom{哈哈}代表作: 本科毕业论文《许瓦兹引理》
+		
+		\vspace{-0.2cm}
+		
+		\item 能够使用
+		\includegraphics[height=0.36cm, width=0.36cm]
+		{matlab.png}
+		Matlab实现算法和计算数学模型\\
+		\phantom{空白}代表作: 图像加密课程论文
+		《基于双Logistic混沌映射的数字图像加密算法实现》
+		
+		\vspace{-0.2cm}
+		
+		\item 普通话(母语)\qquad 
+		粤语(流利)\qquad  
+		英语(CET4: 565)
+	\end{itemize}
+\end{document}
